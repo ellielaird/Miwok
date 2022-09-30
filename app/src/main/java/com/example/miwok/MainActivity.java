@@ -29,14 +29,49 @@ public class MainActivity extends AppCompatActivity {
 
         // Set the content of the activity to use the activity_main.xml layout file
         setContentView(R.layout.activity_main);
+
+
+        TextView tvNumbers = (TextView) findViewById(R.id.numbers);
+        tvNumbers.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i1 = new Intent(getApplicationContext(),NumbersActivity.class);
+                startActivity(i1);
+            }
+        });
+
+
+        TextView tvFamilyMembers = (TextView) findViewById(R.id.family);
+        tvFamilyMembers.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i2 = new Intent(getApplicationContext(),FamilyMembersActivity.class);
+                startActivity(i2);
+            }
+        });
+
+
+        TextView tvColors = (TextView) findViewById(R.id.colors);
+        tvColors.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i3 = new Intent(getApplicationContext(),ColorsActivity.class);
+                startActivity(i3);
+            }
+        });
+
+        TextView tvPhrases = (TextView) findViewById(R.id.phrases);
+        tvPhrases.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i4 = new Intent(getApplicationContext(),PhrasesActivity.class);
+                startActivity(i4);
+            }
+        });
+
     }
 
 
-
-    public void openNumbersList(View view){
-        Intent i1 = new Intent(getApplicationContext(),NumbersActivity.class);
-        startActivity(i1);
-    }
 
 
 }

@@ -10,13 +10,16 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".PhrasesActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:label="Phrases"/>
         <activity
             android:name=".ColorsActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:label="Colors"/>
         <activity
             android:name=".FamilyMembersActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:label="Family Members"/>
         <activity
             android:name=".NumbersActivity"
             android:exported="true"
