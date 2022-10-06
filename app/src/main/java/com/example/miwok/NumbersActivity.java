@@ -21,27 +21,26 @@ public class NumbersActivity extends AppCompatActivity {
 
 
 
-        ArrayList<String> englishNumbers = new ArrayList<String>();
-        englishNumbers.add(0, "One");
-        englishNumbers.add(1, "Two");
-        englishNumbers.add(2, "Three");
-        englishNumbers.add(3, "Four");
-        englishNumbers.add(4, "Five");
-        englishNumbers.add(5, "Six");
-        englishNumbers.add(6, "Seven");
-        englishNumbers.add(7, "Eight");
-        englishNumbers.add(8, "Nine");
-        englishNumbers.add(9, "Ten");
+        ArrayList<WordTranslation> numbers = new ArrayList<WordTranslation>();
+        numbers.add(0, new WordTranslation("One", "Lutti"));
+        numbers.add(1, new WordTranslation("Two", "Otiiko"));
+        numbers.add(2, new WordTranslation("Three", "Tolookosu"));
+        numbers.add(3, new WordTranslation("Four", "Oyyisa"));
+        numbers.add(4, new WordTranslation("Five", "Massokka"));
+        numbers.add(5, new WordTranslation("Six", "Temmokka"));
+        numbers.add(6, new WordTranslation("Seven", "Kenekaku"));
+        numbers.add(7, new WordTranslation("Eight", "Kawinta"));
+        numbers.add(8, new WordTranslation("Nine", "Wo'e"));
+        numbers.add(9, new WordTranslation("Ten", "na'aacha"));
 
 
 
 
-
-        ArrayAdapter<String> itemsAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, englishNumbers);
+        WordTranslationAdaptor adaptor = new WordTranslationAdaptor(this, R.layout.numberslistitem, numbers);
 
         ListView listView = (ListView)findViewById(R.id.list);
 
-        listView.setAdapter(itemsAdapter);
+        listView.setAdapter(adaptor);
 
 
     }
