@@ -3,11 +3,7 @@ package com.example.miwok;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.view.View;
-import android.widget.ArrayAdapter;
-import android.widget.LinearLayout;
 import android.widget.ListView;
-import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -36,7 +32,7 @@ public class NumbersActivity extends AppCompatActivity {
 
 
 
-        WordTranslationAdaptor adaptor = new WordTranslationAdaptor(this, R.layout.numberslistitem, numbers);
+        wordTranslationWithPhotoAdaptor adaptor = new wordTranslationWithPhotoAdaptor(this, R.layout.numberslistitem, numbers);
 
         ListView listView = (ListView)findViewById(R.id.list);
 

@@ -7,7 +7,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/Miwok"
+        android:id="@+id/MiwokPhrases"
         android:paddingTop="16dp"
         android:paddingLeft="16dp"
         android:textSize="20dp">
@@ -17,8 +17,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/English"
-        android:layout_below="@+id/Miwok"
+        android:id="@+id/EnglishPhrases"
+        android:layout_below="@+id/MiwokPhrases"
         android:paddingHorizontal="16dp"
         android:textSize="20dp"
         android:paddingBottom="16dp">
