@@ -26,7 +26,7 @@ public class PhrasesActivity extends AppCompatActivity {
         phrases.add(8, new WordTranslation("Let's go." ,"yoowutis"));
         phrases.add(9, new WordTranslation("Come here." ,"әnni'nem"));
 
-        wordTranslationWithPhotoAdaptor adaptor2 = new wordTranslationWithPhotoAdaptor(this, R.layout.phraseslistitem, phrases);
+        wordTranslationWithoutPhotoAdaptor adaptor2 = new wordTranslationWithoutPhotoAdaptor(this, R.layout.listitem_nophoto, phrases);
 
         ListView listView = (ListView)findViewById(R.id.list4);
 

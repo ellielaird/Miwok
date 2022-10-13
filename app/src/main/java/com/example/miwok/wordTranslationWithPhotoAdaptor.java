@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -27,7 +28,7 @@ public class wordTranslationWithPhotoAdaptor extends ArrayAdapter<WordTranslatio
 
         if(currentItemView == null)
         {
-            currentItemView = LayoutInflater.from(getContext()).inflate(R.layout.numberslistitem, parent, false);
+            currentItemView = LayoutInflater.from(getContext()).inflate(R.layout.listitem_photo, parent, false);
         }
 
         WordTranslation currentWord = (WordTranslation) getItem(position);
@@ -37,6 +38,10 @@ public class wordTranslationWithPhotoAdaptor extends ArrayAdapter<WordTranslatio
 
         TextView tvEnglish = currentItemView.findViewById(R.id.English);
         tvEnglish.setText(currentWord.getEnglishWord());
+
+        ImageView ivImage = currentItemView.findViewById(R.id.image);
+        if(currentWord.getImageId() != -1)
+            ivImage.setImageResource(currentWord.getImageId());
 
         return currentItemView;
 

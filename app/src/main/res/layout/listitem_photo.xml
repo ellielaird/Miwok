@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tan_background"
+    android:minHeight="@dimen/list_item_height">
+
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/image"
+        >
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/Miwok"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/image"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:textSize="20dp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/English"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Miwok"
+        android:layout_toRightOf="@id/image"
+        android:paddingHorizontal="16dp"
+        android:paddingBottom="16dp"
+        android:textSize="20dp">
+
+    </TextView>
+
+
+
+
+</RelativeLayout>

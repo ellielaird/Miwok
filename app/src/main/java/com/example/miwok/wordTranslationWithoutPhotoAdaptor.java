@@ -27,7 +27,7 @@ public class wordTranslationWithoutPhotoAdaptor extends ArrayAdapter<WordTransla
 
         if(currentItemView == null)
         {
-            currentItemView = LayoutInflater.from(getContext()).inflate(R.layout.numberslistitem, parent, false);
+            currentItemView = LayoutInflater.from(getContext()).inflate(R.layout.listitem_nophoto, parent, false);
         }
 
         WordTranslation currentWord = (WordTranslation) getItem(position);
